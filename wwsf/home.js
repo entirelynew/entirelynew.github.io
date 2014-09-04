@@ -28,7 +28,7 @@ function initialize() {
         { visibility: 'on' }
       ]
     }
-  ];
+  ]; 
 
   var mapOptions = {
     zoom: 3,
@@ -77,20 +77,43 @@ function initialize() {
   var iconEleven = 'icon-11.png';
 
 
+  var largeOne = 'large1.png';
+  var largeTwo = 'large2.png';
+  var largeThree = 'large3.png';
+  var largeFour = 'large4.png';
+  var largeFive = 'large5.png';
+  var largeSix = 'large6.png';
+  var largeSeven = 'large7.png';
+  var largeEight = 'large8.png';
+  var largeNine = 'large9.png';
+  var largeTen = 'large10.png';
+  var largeEleven = 'large11.png';
+
+
+
+
+
+
+
 
   var marker_one = new google.maps.Marker({
       position: myLatlng1,
       map: map,
       title:"Hello World!",
-      icon: iconOne
+      icon: iconOne,
   });
+
 
   var marker_two = new google.maps.Marker({
       position: myLatlng2,
       map: map,
       //title:"Hello World!",
-      icon: iconTwo
+      icon: iconTwo,
+
   });
+
+
+
   var marker_three = new google.maps.Marker({
       position: myLatlng3,
       map: map,
@@ -179,32 +202,128 @@ google.maps.event.addDomListener(window, "resize", function() {
 */
 
 
+
+
+//marke 2
 google.maps.event.addListener(marker_two, 'mouseover', function() {
-    marker_two.setIcon("large2.png");
+    marker_two.setIcon(largeTwo);
     this.setOptions({zIndex:999+1});
+
 });
 google.maps.event.addListener(marker_two, 'mouseout', function() {
     marker_two.setIcon(iconTwo);
 });
 google.maps.event.addListener(marker_two, 'click', function() {
-   
-
-
-
-
+    window.location.href = 'project2.html'
 });
 
-
-
-
-
+//marker 3
 google.maps.event.addListener(marker_three, 'mouseover', function() {
-    marker_three.setIcon("large3.png");
+    marker_three.setIcon(largeThree);
+    this.setOptions({zIndex:999+1});
 });
 google.maps.event.addListener(marker_three, 'mouseout', function() {
     marker_three.setIcon(iconThree);
 });
+google.maps.event.addListener(marker_three, 'click', function() {
+    window.location.href = 'project3.html'
+});
 
+//marker 4
+google.maps.event.addListener(marker_four, 'mouseover', function() {
+    marker_four.setIcon(largeFour);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_four, 'mouseout', function() {
+    marker_four.setIcon(iconFour);
+});
+google.maps.event.addListener(marker_four, 'click', function() {
+    window.location.href = 'project4.html'
+});
+
+//marker 5
+google.maps.event.addListener(marker_five, 'mouseover', function() {
+    marker_five.setIcon(largeFive);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_five, 'mouseout', function() {
+    marker_five.setIcon(iconFive);
+});
+google.maps.event.addListener(marker_five, 'click', function() {
+    window.location.href = 'project5.html'
+});
+
+//marker 6
+google.maps.event.addListener(marker_six, 'mouseover', function() {
+    marker_six.setIcon(largeSix);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_six, 'mouseout', function() {
+    marker_six.setIcon(iconSix);
+});
+google.maps.event.addListener(marker_six, 'click', function() {
+    window.location.href = 'project6.html'
+});
+
+//marker 7
+google.maps.event.addListener(marker_seven, 'mouseover', function() {
+    marker_seven.setIcon(largeSeven);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_seven, 'mouseout', function() {
+    marker_seven.setIcon(iconSeven);
+});
+google.maps.event.addListener(marker_seven, 'click', function() {
+    window.location.href = 'project7.html'
+});
+
+//marker 8
+google.maps.event.addListener(marker_eight, 'mouseover', function() {
+    marker_eight.setIcon(largeEight);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_eight, 'mouseout', function() {
+    marker_eight.setIcon(iconEight);
+});
+google.maps.event.addListener(marker_eight, 'click', function() {
+    window.location.href = 'project8.html'
+});
+
+//marker 9
+google.maps.event.addListener(marker_nine, 'mouseover', function() {
+    marker_nine.setIcon(largeNine);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_nine, 'mouseout', function() {
+    marker_nine.setIcon(iconNine);
+});
+google.maps.event.addListener(marker_nine, 'click', function() {
+    window.location.href = 'project9.html'
+});
+
+//marker 10
+google.maps.event.addListener(marker_ten, 'mouseover', function() {
+    marker_ten.setIcon(largeTen);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_ten, 'mouseout', function() {
+    marker_ten.setIcon(iconTen);
+});
+google.maps.event.addListener(marker_ten, 'click', function() {
+    window.location.href = 'project10.html'
+});
+
+//marker 11
+google.maps.event.addListener(marker_eleven, 'mouseover', function() {
+    marker_eleven.setIcon(largeEleven);
+    this.setOptions({zIndex:999+1});
+});
+google.maps.event.addListener(marker_eleven, 'mouseout', function() {
+    marker_eleven.setIcon(iconEleven);
+});
+google.maps.event.addListener(marker_eleven, 'click', function() {
+    window.location.href = 'project11.html'
+});
 
 
 

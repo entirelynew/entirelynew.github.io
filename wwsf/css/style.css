@@ -62,7 +62,7 @@ audio {
 
   opacity: 0;
   pointer-events: none;
-  z-index: 999;
+  z-index: 900;
   position: absolute;
   width: 100%;
   padding-bottom: 100%;
@@ -159,7 +159,6 @@ audio {
 }
 
 .calclose{
-  pointer-events: auto;
   z-index: 999;
 }
 
