@@ -169,6 +169,7 @@ google.maps.event.addDomListener(window, "resize", function() {
 //open onclick
 
 
+
 /*
 
    google.maps.event.addListener(marker_two, 'click', function() {
@@ -180,17 +181,25 @@ google.maps.event.addDomListener(window, "resize", function() {
 
 google.maps.event.addListener(marker_two, 'mouseover', function() {
     marker_two.setIcon("large2.png");
-
-                getHighestZIndex();
-            this.setOptions({zIndex:highestZIndex+1});
+    this.setOptions({zIndex:999+1});
 });
 google.maps.event.addListener(marker_two, 'mouseout', function() {
     marker_two.setIcon(iconTwo);
 });
+google.maps.event.addListener(marker_two, 'click', function() {
+   
+
+
+
+
+});
+
+
+
 
 
 google.maps.event.addListener(marker_three, 'mouseover', function() {
-    marker_three.setIcon("large2.png");
+    marker_three.setIcon("large3.png");
 });
 google.maps.event.addListener(marker_three, 'mouseout', function() {
     marker_three.setIcon(iconThree);

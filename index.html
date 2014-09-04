@@ -111,16 +111,33 @@
 
           });
 
+//audio play button
 
           $( "#audio_on" ).click(function( event ) {
        
 
 
+
+          });
+
+//opens overlay for calendar
+
+          $( ".calendar" ).click(function( event ) {
+       
+
+              $( ".calendaroverlay" ).css({
+                   'opacity' : '1',
+                   'pointer-events' : 'auto'
+                });
           });
 
 
-          $( "#calendar" ).click(function( event ) {
+          $( ".calclose" ).click(function( event ) {
        
+              $( ".calendaroverlay" ).css({
+                   'opacity' : '0',
+                   'pointer-events' : 'none',
+                })  
 
 
           });
@@ -139,6 +156,14 @@
 
     <div id="map-canvas"></div>
 
+
+    <div class="calendaroverlay">
+
+             <div class="square_w_image" style="float: right;">
+              <img class="calclose" src="assets/icons/close_icon.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+            </div>
+
+    </div>
     <div class="overlay">
 
              <div class="square_w_image" style="float: right;">
@@ -293,7 +318,7 @@
           $(function() {
             $('#slides').superslides({
               hashchange: true,
-              play: 1200,
+              play: 1400,
               inherit_width_from: '.wide-container',
               inherit_height_from: '.wide-container'
             });
@@ -366,8 +391,8 @@
 
       <div class="square"></div>
 
-      <div class="square_last_col" id="calendar" style="pointer-events: none;">       
-        <img src="assets/still/calendar.jpg" style="width:100%; height:100%; z-index: 10; position: absolute;" /></div>
+      <div class="square_last_col" style="pointer-events: none;">       
+        <img class="calendar" src="assets/still/calendar.jpg" style="width:100%; height:100%; z-index: 10; position: absolute;" /></div>
 
 
 

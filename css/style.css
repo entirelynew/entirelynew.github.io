@@ -40,6 +40,36 @@ audio {
 }
 
 
+
+
+/* AUDIO */
+
+#audio_on {
+    cursor: pointer;
+
+}
+
+/* CALENDAR */
+
+.calendar {
+
+    cursor: pointer;
+      pointer-events: auto;
+
+}
+
+.calendaroverlay {
+
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgba(0,0,0,0.8);
+
+}
+
 /* IMAGE SLIDER */
 
 
@@ -86,7 +116,7 @@ audio {
 
 }
 
-.open, .close {
+.open, .close, .calclose {
   cursor: pointer;
 }
 
@@ -124,6 +154,11 @@ audio {
 
 
 .close{
+  pointer-events: auto;
+  z-index: 999;
+}
+
+.calclose{
   pointer-events: auto;
   z-index: 999;
 }
